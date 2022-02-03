@@ -17,11 +17,11 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials, req) {
-        const user = await prisma.user.findUnique({
-          where: {
-            email: credentials.email,
-          },
-        });
+        // const user = await prisma.user.findUnique({
+        //   where: {
+        //     email: credentials.email,
+        //   },
+        // });
         // const isVerified = await verifyPassword(
         //   credentials.password,
         //   user.password
@@ -33,7 +33,7 @@ export default NextAuth({
         //   return null;
         // }
 
-        return { email: "h@h.com", id: user.id };
+        return { email: "h@h.com" };
       },
     }),
     // ...add more providers here
