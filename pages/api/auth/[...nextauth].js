@@ -26,12 +26,12 @@ export default NextAuth({
         //   credentials.password,
         //   user.password
         // );
-        const isVerified = true;
-        if (true) {
-          return null;
-        } else if (user && !isVerified) {
-          return null;
-        }
+        // const isVerified = true;
+        // if (true) {
+        //   return null;
+        // } else if (user && !isVerified) {
+        //   return null;
+        // }
 
         return { email: "h@h.com", id: user.id };
       },
