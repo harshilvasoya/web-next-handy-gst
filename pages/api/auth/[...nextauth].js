@@ -27,13 +27,13 @@ export default NextAuth({
         //   user.password
         // );
         const isVerified = true;
-        if (!user) {
+        if (true) {
           return null;
         } else if (user && !isVerified) {
           return null;
         }
 
-        return { email: user.email, id: user.id };
+        return { email: "h@h.com", id: user.id };
       },
     }),
     // ...add more providers here
